@@ -1,0 +1,61 @@
+/*
+style.css
+---------
+Feuille de style relative à la maquette mobile "OhMyFood!"
+Par Tony BARTHELEMY
+*/
+
+/* CSS Golbal : */
+
+body, div, h1, h2, h3, img, form, header, section, aside, nav, footer {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+@font-face {
+	font-family: 'Shrikhand';
+    src: url('href="https://fonts.googleapis.com/css?family=Shrikhand');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto';
+    src: url('href="https://fonts.googleapis.com/css?family=Roboto');
+	font-style: normal;
+}
+
+
+h1, h2 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+h2 {
+    margin: 1em;
+}
+
+h3 {
+    font-size: 1em;
+}
+p {
+    font-size: 14px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+}
+
+
+
+/* CSS RESPONSIVE : */
+
+@media all and (max-width: 1050px) {
+
+}
+
+@media all and (max-width: 800px) {
+
+}
+
+@media only screen and (max-width: 550px) {
+
+}
