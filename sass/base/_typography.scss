@@ -1,0 +1,47 @@
+@font-face {
+	font-family: 'Shrikhand';
+    src: url('href="https://fonts.googleapis.com/css?family=Shrikhand');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto';
+    src: url('href="https://fonts.googleapis.com/css?family=Roboto');
+	font-style: normal;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+h1 {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+h2 {
+    margin: 1em;
+    font-weight: bold;
+    width: 100%;
+}
+
+h3 {
+    font-size: 1em;
+    font-weight: bold;
+}
+p {
+    font-size: 16px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+ul {
+    list-style-type: none;
+}
+li {
+    margin-bottom: 0.3em;
+}
+a {
+    color: white;
+    text-decoration: none;
+}

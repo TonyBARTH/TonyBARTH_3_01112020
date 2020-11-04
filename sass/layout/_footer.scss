@@ -1,0 +1,25 @@
+/* CSS FOOTER : */
+
+Footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #353535;
+    color: white;
+    height: 15em;
+    .fas {
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+    }
+    a:hover {
+        border-bottom: 1px solid white;
+    }
+}
+
+#Logo-footer {
+    filter: invert(1);
+    width: 160px;
+    margin-bottom: 1em;
+}

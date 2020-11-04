@@ -3,7 +3,7 @@
 	<head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./public/css/style.css" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shrikhand">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:light">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular">
@@ -15,9 +15,9 @@
     <body>
         <header id="Header-banner">
             <div id="Logo">
-                <img src="images/ohmyfood-logo.svg" alt="Oh My Food Logo">
+                <img src="public/img/ohmyfood-logo.svg" alt="Oh My Food Logo">
             </div>
-            <div id="Back-button">
+            <div class="btn-back">
                 <i class="fas fa-arrow-left"></i>
             </div>
         </header>
@@ -30,7 +30,7 @@
         <section id="Banner-Welcome">
             <h1>Réservez le menu qui vous convient</h1>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <button>Explorer nos restaurants</button>
+            <button class="btn-main">Explorer nos restaurants</button>
         </section>
 
 
@@ -39,19 +39,19 @@
             <h2>Fonctionnement</h2>
 
             <div class="How-To-Step">
-                <div class="Step-number">1</div>
+                <div class="How-To-Step__Step-number">1</div>
                 <div><i class="fas fa-mobile-alt"></i></div>
                 <p>Choisissez un restaurant</p>
             </div>
 
             <div class="How-To-Step">
-                <div class="Step-number">2</div>
+                <div class="How-To-Step__Step-number">2</div>
                 <div><i class="fas fa-list-ul"></i></div>
                 <p>Composez votre menu</p>
             </div>
 
             <div class="How-To-Step">
-                <div class="Step-number">3</div>
+                <div class="How-To-Step__Step-number">3</div>
                 <div><i class="fas fa-store"></i></div>
                 <p>Dégustez au restaurant</p>
             </div>
@@ -64,45 +64,45 @@
             <h2>Restaurants</h2>
 
             <div class="Restaurant-tile">
-                <img src="images/restaurant-la-palette-du-gout-xs.jpg" alt="Photo de la Palette du goût" />
-                <div class="Restaurant-label">
+                <img src="public/img/restaurant-la-palette-du-gout-xs.jpg" alt="Photo de la Palette du goût" />
+                <div class="Restaurant-tile__label">
                     <h3>La Palette du goût</h3>
                     <p>Ménilmontant</p>
                 </div>
-                <div class="Icon-like">
+                <div class="Restaurant-tile__Icon-like">
                     <i class="far fa-heart"></i>
                 </div>
             </div>
 
             <div class="Restaurant-tile">
-                <img src="images/la-note-enchantee-xs.jpg" alt="Photo de La note enchantée" />
-                <div class="Restaurant-label">
+                <img src="public/img/la-note-enchantee-xs.jpg" alt="Photo de La note enchantée" />
+                <div class="Restaurant-tile__label">
                     <h3>La Note enchantée</h3>
                     <p>Charonne</p>
                 </div>
-                <div class="Icon-like">
+                <div class="Restaurant-tile__Icon-like">
                     <i class="far fa-heart"></i>
                 </div>
             </div>
 
             <div class="Restaurant-tile">
-                <img src="images/a-la-francaise-xs.jpg" alt="Photo de A la Française" />
-                <div class="Restaurant-label">
+                <img src="public/img/a-la-francaise-xs.jpg" alt="Photo de A la Française" />
+                <div class="Restaurant-tile__label">
                     <h3>A la française</h3>
                     <p>Cité Rouge</p>
                 </div>
-                <div class="Icon-like">
+                <div class="Restaurant-tile__Icon-like">
                     <i class="far fa-heart"></i>
                 </div>
             </div>
 
             <div class="Restaurant-tile">
-                <img src="images/le-delice-des-sens-xs.jpg" alt="Photo du Délice des sens" />
-                <div class="Restaurant-label">
+                <img src="public/img/le-delice-des-sens-xs.jpg" alt="Photo du Délice des sens" />
+                <div class="Restaurant-tile__label">
                     <h3>Le délice des sens</h3>
                     <p>Folie-Méricourt</p>
                 </div>
-                <div class="Icon-like">
+                <div class="Restaurant-tile__Icon-like">
                     <i class="far fa-heart"></i>
                 </div>
             </div>
@@ -111,7 +111,7 @@
 
         <footer>
             <div>
-                <img src="images/ohmyfood-logo.svg" alt="Oh My Food Logo" id="Logo-footer" >
+                <img src="public/img/ohmyfood-logo.svg" alt="Oh My Food Logo" id="Logo-footer" >
             </div>
             <div id="footer-links">
                 <ul>
