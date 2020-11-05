@@ -1,0 +1,14 @@
+header {
+    display: flex;
+    align-items: center;
+    height: 4em;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
+    z-index: 5;
+    #Logo {
+        margin: auto;
+    }
+}

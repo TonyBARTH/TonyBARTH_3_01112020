@@ -1,0 +1,60 @@
+/* SCSS LOCATION BANNER : */
+
+#Location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eaeaea;
+    height: 3em;
+    width: 100%;
+    z-index: 4;
+    .fas {
+        margin-right: 10px;
+    }
+}
+
+/* SCSS WELCOME SECTION : */
+
+#Banner-Welcome {
+    text-align: center;
+    height: 18em;
+    background-color: #f6f6f6;
+    h1 {
+        padding: 2em 1em 1em 1em;
+    }
+
+}
+
+/* SCSS EXPLANATIONS SECTION : */
+
+#Explainations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 3em;
+}
+
+.How-To-Step {
+    display: flex;
+    align-items: center;
+    background-color: $grey-background;
+    height: 4.5em;
+    width: 18em;
+    margin: 0.8em 1em;
+    box-shadow: $shadow-standard;
+    border-radius: 25px;
+    &__Step-number {
+        padding: 0.2em;
+        margin-left: -12px;
+        width: 1.2em;
+        background-color: blueviolet;
+        border-radius: 12px;
+        text-align: center;
+        color: white;
+    }
+    .fas {
+        margin: 0 20px 0 20px;
+        color: grey;
+        font-size: 20px;
+    }
+}
