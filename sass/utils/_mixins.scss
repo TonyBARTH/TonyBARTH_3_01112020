@@ -11,8 +11,13 @@
     border: 0px;
     border-radius: 3em;
     box-shadow: $shadow-standard;
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 300ms;
     cursor: pointer;
     &:hover {
+        transform: scale(1.05);
+        transition-delay: 50ms ease;
         opacity: 0.85;
         box-shadow: $shadow-hover;
     }
