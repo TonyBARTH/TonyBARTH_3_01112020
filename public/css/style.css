@@ -174,15 +174,22 @@ a {
   background-color: white;
   box-shadow: 2px 5px 10px 0px #00000030;
   border-radius: 15px;
-  animation: slide-top 800ms ease-in-out both;
+  animation: slide-top 600ms ease-in-out both;
   cursor: pointer;
 }
 .Menu-item__label {
   width: 100%;
   padding: 0.8em;
-  text-overflow: ellipsis;
   white-space: nowrap;
+  /* Pour la coupure des textes */
   overflow: hidden;
+  /* Pour la coupure des textes */
+}
+.Menu-item__label h3, .Menu-item__label p {
+  text-overflow: ellipsis;
+  /* Pour la coupure des textes */
+  overflow: hidden;
+  /* Pour la coupure des textes */
 }
 .Menu-item__price {
   display: flex;
@@ -190,13 +197,12 @@ a {
   align-items: flex-end;
 }
 .Menu-item__check {
-  display: none;
   transform-origin: right;
   transition: all 200ms ease-in;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 0;
+  width: 0;
   height: 100%;
   color: white;
   font-size: 1.3em;
@@ -207,8 +213,17 @@ a {
   cursor: pointer;
 }
 .Menu-item__check .fas {
-  display: none;
-  opacity: 0;
+  transform: rotate(0turn);
+  transition: all 400ms ease-in-out;
+}
+.Menu-item:hover .Menu-item__check {
+  transition: all 200ms ease-out;
+  width: 6em;
+}
+.Menu-item:hover .Menu-item__check .fas {
+  display: flex;
+  margin: auto;
+  transform: rotate(-1turn);
 }
 .Menu-item:nth-child(2) {
   animation-delay: 0;
@@ -222,19 +237,10 @@ a {
 .Menu-item:nth-child(5) {
   animation-delay: 0.6s;
 }
-.Menu-item:hover .Menu-item__check {
-  transition: all 200ms ease-out;
-  min-width: 4em;
-}
-.Menu-item:hover .Menu-item__check .fas {
-  display: flex;
-  opacity: 1;
-  margin: auto;
-}
 
 @keyframes slide-top {
   0% {
-    transform: translateY(10vh);
+    transform: translateY(8vh);
     opacity: 0;
   }
   100% {
