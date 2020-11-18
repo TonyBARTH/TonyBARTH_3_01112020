@@ -26,11 +26,9 @@
     border-top-left-radius: 3em;
     border-top-right-radius: 3em;
     .far {
-        font-size: 25px;
-        position: absolute;
         top: 35px;
         right: 35px;
-        cursor: pointer;
+        @include icon-heart;
     }
 }
 
@@ -49,10 +47,9 @@
         object-fit: cover;
         }
     .far {
-        font-size: 25px;
-        position: absolute;
         right: 25px;
         bottom: 25px;
+        @include icon-heart;
     }
     &__label {
         margin: 1em;
@@ -74,7 +71,7 @@
     background-color: white;
     box-shadow: $shadow-standard;
     border-radius: 15px;
-    animation: slide-top 600ms ease-in-out both;
+    animation: slide-top 800ms ease-in-out both;
     cursor: pointer;
     &__label {
         width: 100%;
@@ -101,7 +98,7 @@
         height: 100%;
         color: white;
         font-size: 1.3em;
-        background-color: $main-color;
+        background-color: $third-color;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
         overflow: hidden;
@@ -118,26 +115,26 @@
             .fas {
                 display: flex;
                 margin: auto;
-                transform: rotate(-1turn);
+                transform: rotate(1turn);
             }
         }
     }
     &:nth-child(2) {
-        animation-delay: 0;
+        animation-delay: 3s;
     }
     &:nth-child(3) {
-        animation-delay: 0.2s;
+        animation-delay: 3.2s;
     }
     &:nth-child(4) {
-        animation-delay: 0.4s;
+        animation-delay: 3.4s;
     }
     &:nth-child(5) {
-        animation-delay: 0.6s;
+        animation-delay: 3.6s;
     }
 }
 @keyframes slide-top {
     0% {
-        transform: translateY(8vh);
+        transform: translateY(3vh);
         opacity: 0;
     }
     100% {

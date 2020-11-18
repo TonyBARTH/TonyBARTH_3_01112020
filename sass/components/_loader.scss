@@ -1,0 +1,60 @@
+.pre-loader {
+  display: flex;
+  z-index: 10;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  visibility: hidden;
+  animation: fadeout 3s;
+    -webkit-animation: fadeout 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadeout 3s; /* Firefox < 16 */
+        -o-animation: fadeout 3s; /* Opera < 12.1 */
+  div {
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    border: 5px solid $third-color;
+    border-radius: 50%;
+    border-color: $third-color transparent transparent transparent;
+    animation: rotate 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  }
+  div:nth-child(1) {
+    animation-delay: -0.45s;
+  }
+  div:nth-child(2) {
+    animation-delay: -0.3s;
+  }
+  div:nth-child(3) {
+    animation-delay: -0.15s;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    visibility: visible;
+    opacity: 1;
+  }
+  90% {
+    visibility: visible;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+
