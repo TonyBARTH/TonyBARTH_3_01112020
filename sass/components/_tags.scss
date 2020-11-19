@@ -1,0 +1,13 @@
+.tag-new {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    padding: 0.5em 0.8em;
+    border-radius: 2px;
+    color: darken($third-color, 40%);
+    background-color: $third-color;
+    box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.4);
+
+}

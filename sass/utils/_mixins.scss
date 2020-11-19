@@ -15,7 +15,7 @@
     cursor: pointer;
     &:hover {
         transform: scale(1.05);
-        transition-delay: 100ms ease;
+        transition: 100ms ease-in-out;
         opacity: 0.9;
         box-shadow: $shadow-hover;
     }
@@ -39,7 +39,6 @@
     &:hover {
         font-weight: bold;
         background: $reverse-gradient;
-        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
