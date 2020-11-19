@@ -1,14 +1,13 @@
-#Banner-Welcome h1 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-}
-#Explainations h2 {
-    font-weight: bold;
-    text-transform: none;
-}
 #Results h2 {
+    font-size: 1.5em;
     font-weight: bold;
     text-transform: none;
+    margin-bottom: 0.5em;
+    margin-top: 1.5em;
+    &::after {
+        content: "";
+        display: none;
+    }
 }
 
 /* SCSS LOCATION BANNER : */
@@ -29,11 +28,20 @@
 /* SCSS WELCOME SECTION : */
 
 #Banner-Welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    height: 18em;
+    height: 20em;
     background-color: #f6f6f6;
     h1 {
         padding: 2em 1em 1em 1em;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }
+    p {
+        font-size: 18px;
     }
 
 }
@@ -45,6 +53,17 @@
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 3em;
+    h2 {
+        font-size: 1.5em;
+        font-weight: bold;
+        text-transform: none;
+        margin-bottom: 0.5em;
+        margin-top: 1.5em;
+        &::after {
+            content: "";
+            display: none;
+        }
+    }
 }
 
 .How-To-Step {
