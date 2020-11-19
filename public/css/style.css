@@ -166,6 +166,8 @@ a {
 #Results {
   display: flex;
   justify-content: space-around;
+  /* in case of non-support space-evenly property below */
+  justify-content: space-evenly;
   flex-wrap: wrap;
   padding-bottom: 3em;
   background-color: #f2f2f2;
@@ -244,6 +246,16 @@ a {
 .Restaurant-tile:hover {
   transform: scale(1.02);
 }
+@media all and (max-width: 1100px) {
+  .Restaurant-tile {
+    width: 40%;
+  }
+}
+@media all and (max-width: 550px) {
+  .Restaurant-tile {
+    width: 80%;
+  }
+}
 
 .Container-Restaurant-Menu {
   display: flex;
@@ -255,6 +267,7 @@ a {
   display: flex;
   flex: 1;
   min-width: 15em;
+  height: 100px;
   margin: 0.5em;
   background-color: white;
   box-shadow: 2px 5px 10px 0px #00000030;
@@ -321,6 +334,16 @@ a {
 }
 .Menu-item:nth-child(5) {
   animation-delay: 3.6s;
+}
+@media all and (max-width: 1100px) {
+  .Menu-item {
+    height: 80px;
+  }
+}
+@media all and (max-width: 550px) {
+  .Menu-item {
+    height: auto;
+  }
 }
 
 @keyframes slide-top {
