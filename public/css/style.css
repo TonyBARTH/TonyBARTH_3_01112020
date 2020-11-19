@@ -212,6 +212,8 @@ a {
   border-radius: 15px;
   margin: 1em;
   box-shadow: 2px 5px 10px 0px #00000030;
+  transform: scale(1);
+  transition-duration: 300ms;
   cursor: pointer;
 }
 .Restaurant-tile img {
@@ -238,6 +240,9 @@ a {
 .Restaurant-tile__label {
   margin: 1em;
   color: black;
+}
+.Restaurant-tile:hover {
+  transform: scale(1.02);
 }
 
 .Container-Restaurant-Menu {
