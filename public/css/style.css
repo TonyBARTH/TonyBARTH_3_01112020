@@ -253,7 +253,7 @@ a {
 }
 /* SPECIFIC SCSS : */
 /* SCSS RESULTS DISPLAY SECTION : */
-#Results {
+#results {
   display: flex;
   justify-content: space-around;
   /* in case of non-support space-evenly property below */
@@ -272,7 +272,7 @@ a {
   object-fit: cover;
 }
 
-.Container {
+.container {
   z-index: 4;
   position: relative;
   margin-top: -5em;
@@ -281,7 +281,7 @@ a {
   border-top-left-radius: 3em;
   border-top-right-radius: 3em;
 }
-.Container .far {
+.container .far {
   top: 35px;
   right: 35px;
   font-size: 25px;
@@ -289,14 +289,14 @@ a {
   transition: all 200ms ease-in-out;
   cursor: pointer;
 }
-.Container .far:hover {
+.container .far:hover {
   font-weight: bold;
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.Restaurant-tile {
+.restaurant-tile {
   position: relative;
   width: 22%;
   background-color: white;
@@ -307,13 +307,13 @@ a {
   transition-duration: 300ms;
   cursor: pointer;
 }
-.Restaurant-tile img {
+.restaurant-tile img {
   width: 100%;
   height: 12em;
   border-radius: 10px 10px 0 0;
   object-fit: cover;
 }
-.Restaurant-tile .far {
+.restaurant-tile .far {
   right: 25px;
   bottom: 25px;
   font-size: 25px;
@@ -321,38 +321,38 @@ a {
   transition: all 200ms ease-in-out;
   cursor: pointer;
 }
-.Restaurant-tile .far:hover {
+.restaurant-tile .far:hover {
   font-weight: bold;
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.Restaurant-tile__label {
+.restaurant-tile__label {
   margin: 1em;
   color: black;
 }
-.Restaurant-tile:hover {
+.restaurant-tile:hover {
   transform: scale(1.02);
   box-shadow: 2px 10px 20px 0px #00000035;
 }
 @media all and (max-width: 1100px) {
-  .Restaurant-tile {
+  .restaurant-tile {
     width: 40%;
   }
 }
 @media all and (max-width: 550px) {
-  .Restaurant-tile {
+  .restaurant-tile {
     width: 80%;
   }
 }
 
-.Container-Restaurant-Menu {
+.container-restaurant-menu {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 2em;
 }
 
-.Menu-item {
+.menu-item {
   display: flex;
   flex: 1;
   min-width: 15em;
@@ -364,7 +364,7 @@ a {
   animation: slide-top 800ms ease-in-out both;
   cursor: pointer;
 }
-.Menu-item__label {
+.menu-item__label {
   width: 100%;
   padding: 0.8em;
   white-space: nowrap;
@@ -372,18 +372,18 @@ a {
   overflow: hidden;
   /* Pour la coupure des textes */
 }
-.Menu-item__label h3, .Menu-item__label p {
+.menu-item__label h3, .menu-item__label p {
   text-overflow: ellipsis;
   /* Pour la coupure des textes */
   overflow: hidden;
   /* Pour la coupure des textes */
 }
-.Menu-item__price {
+.menu-item__price {
   display: flex;
   padding: 0.8em;
   align-items: flex-end;
 }
-.Menu-item__check {
+.menu-item__check {
   transform-origin: right;
   transition: all 200ms ease-in;
   display: flex;
@@ -399,38 +399,38 @@ a {
   overflow: hidden;
   cursor: pointer;
 }
-.Menu-item__check .fas {
+.menu-item__check .fas {
   transform: rotate(0turn);
   transition: all 400ms ease-in-out;
 }
-.Menu-item:hover .Menu-item__check {
+.menu-item:hover .menu-item__check {
   transition: all 200ms ease-out;
   width: 6em;
 }
-.Menu-item:hover .Menu-item__check .fas {
+.menu-item:hover .menu-item__check .fas {
   display: flex;
   margin: auto;
   transform: rotate(1turn);
 }
-.Menu-item:nth-child(2) {
+.menu-item:nth-child(2) {
   animation-delay: 3s;
 }
-.Menu-item:nth-child(3) {
+.menu-item:nth-child(3) {
   animation-delay: 3.2s;
 }
-.Menu-item:nth-child(4) {
+.menu-item:nth-child(4) {
   animation-delay: 3.4s;
 }
-.Menu-item:nth-child(5) {
+.menu-item:nth-child(5) {
   animation-delay: 3.6s;
 }
 @media all and (max-width: 1100px) {
-  .Menu-item {
+  .menu-item {
     height: 80px;
   }
 }
 @media all and (max-width: 550px) {
-  .Menu-item {
+  .menu-item {
     height: auto;
   }
 }
@@ -456,12 +456,12 @@ header {
   box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.3);
   z-index: 5;
 }
-header #Logo {
+header #logo {
   margin: auto;
 }
 
 /* CSS FOOTER : */
-Footer {
+footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -470,35 +470,35 @@ Footer {
   color: white;
   height: 15em;
 }
-Footer .fas {
+footer .fas {
   height: 20px;
   width: 20px;
   margin-right: 10px;
 }
-Footer a:hover {
+footer a:hover {
   border-bottom: 1px solid white;
 }
 
-#Logo-footer {
+#logo-footer {
   filter: invert(1);
   width: 160px;
   margin-bottom: 1em;
 }
 
-#Results h2 {
+#results h2 {
   font-size: 1.5em;
   font-weight: bold;
   text-transform: none;
   margin-bottom: 0.5em;
   margin-top: 1.5em;
 }
-#Results h2::after {
+#results h2::after {
   content: "";
   display: none;
 }
 
 /* SCSS LOCATION BANNER : */
-#Location {
+#location {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -507,12 +507,12 @@ Footer a:hover {
   width: 100%;
   z-index: 4;
 }
-#Location .fas {
+#location .fas {
   margin-right: 10px;
 }
 
 /* SCSS WELCOME SECTION : */
-#Banner-Welcome {
+#banner-welcome {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -521,35 +521,35 @@ Footer a:hover {
   height: 20em;
   background-color: #f6f6f6;
 }
-#Banner-Welcome h1 {
+#banner-welcome h1 {
   padding: 2em 1em 1em 1em;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
 }
-#Banner-Welcome p {
+#banner-welcome p {
   font-size: 18px;
 }
 
 /* SCSS EXPLANATIONS SECTION : */
-#Explainations {
+#explainations {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-bottom: 3em;
 }
-#Explainations h2 {
+#explainations h2 {
   font-size: 1.5em;
   font-weight: bold;
   text-transform: none;
   margin-bottom: 0.5em;
   margin-top: 1.5em;
 }
-#Explainations h2::after {
+#explainations h2::after {
   content: "";
   display: none;
 }
 
-.How-To-Step {
+.how-to-step {
   display: flex;
   align-items: center;
   background-color: #f2f2f2;
@@ -559,7 +559,7 @@ Footer a:hover {
   box-shadow: 2px 5px 10px 0px #00000030;
   border-radius: 25px;
 }
-.How-To-Step__Step-number {
+.how-to-step__step-number {
   padding: 0.2em;
   margin-left: -12px;
   width: 1.2em;
@@ -568,7 +568,7 @@ Footer a:hover {
   text-align: center;
   color: white;
 }
-.How-To-Step .fas {
+.how-to-step .fas {
   margin: 0 20px 0 20px;
   color: grey;
   font-size: 20px;
