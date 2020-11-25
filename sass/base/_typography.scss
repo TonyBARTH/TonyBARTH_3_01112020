@@ -1,21 +1,21 @@
 @font-face {
-	font-family: 'Shrikhand';
+	font-family: $second-font;
     src: url('href="https://fonts.googleapis.com/css?family=Shrikhand');
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Roboto';
+	font-family: $first-font;
     src: url('href="https://fonts.googleapis.com/css?family=Roboto');
 	font-style: normal;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: $first-font;
 }
 
 h1 {
     font-size: 1.8em;
-    font-family: 'Shrikhand';
+    font-family: $second-font;
     font-weight: lighter;
 }
 h2 {

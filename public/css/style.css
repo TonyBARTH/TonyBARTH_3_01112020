@@ -13,12 +13,12 @@ body, div, h1, h2, h3, img, form, header, section, aside, nav, ul, footer {
 }
 
 @font-face {
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", sans-serif;
   src: url('href="https://fonts.googleapis.com/css?family=Shrikhand');
   font-style: normal;
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   src: url('href="https://fonts.googleapis.com/css?family=Roboto');
   font-style: normal;
 }
@@ -28,7 +28,7 @@ body {
 
 h1 {
   font-size: 1.8em;
-  font-family: "Shrikhand";
+  font-family: "Shrikhand", sans-serif;
   font-weight: lighter;
 }
 
@@ -333,6 +333,7 @@ a {
 }
 .Restaurant-tile:hover {
   transform: scale(1.02);
+  box-shadow: 2px 10px 20px 0px #00000035;
 }
 @media all and (max-width: 1100px) {
   .Restaurant-tile {
