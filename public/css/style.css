@@ -559,11 +559,14 @@ footer a:hover {
   box-shadow: 2px 5px 10px 0px #00000030;
   border-radius: 25px;
 }
+.how-to-step:hover {
+  background-color: #f2eafb;
+}
 .how-to-step__step-number {
   padding: 0.2em;
   margin-left: -12px;
   width: 1.2em;
-  background-color: blueviolet;
+  background-color: #9356dc;
   border-radius: 12px;
   text-align: center;
   color: white;

@@ -75,11 +75,14 @@
     margin: 0.8em 1em;
     box-shadow: $shadow-standard;
     border-radius: 25px;
+    &:hover {
+        background-color: lighten($main-color, 35%);
+    }
     &__step-number {
         padding: 0.2em;
         margin-left: -12px;
         width: 1.2em;
-        background-color: blueviolet;
+        background-color: $main-color;
         border-radius: 12px;
         text-align: center;
         color: white;
